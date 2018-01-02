@@ -1,0 +1,892 @@
+﻿.user-data h4 span {
+    font-size: 12px;
+}
+
+.note {
+    text-align: right;
+}
+
+.sidebar-container ul,
+ol,
+menu,
+.sidebar-container li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.community-list .icon-container {
+    float: none;
+    display: table-cell;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    line-height: 0;
+    padding: 0 0 0 10px;
+}
+
+    .community-list .icon-container .icon {
+        border: 1px solid #ddd;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+.community-list .user-community .icon-container .icon {
+    width: 36px;
+    height: 36px;
+}
+
+.community-list .title {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #323232;
+    margin-bottom: 2px;
+    margin-top: 3px;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .community-list .title:hover {
+        text-decoration: none;
+    }
+
+.community-list .text {
+    color: #969696;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    display: block;
+}
+
+.community-list .body {
+    margin-left: 0;
+    display: table-cell;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+    padding: 5px 15px 0 10px;
+    word-wrap: break-word;
+    max-width: 176px;
+}
+
+.community-list .community-list-cover {
+    display: none;
+}
+
+.community-list.other-communities-list .text {
+    display: none;
+}
+
+.community-list .siblings {
+    display: table-cell;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+    padding: 0 5px;
+    width: 40px;
+    color: #969696;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    *width: 70px;
+    *text-align: left;
+    *cursor: pointer;
+    z-index: 2;
+}
+
+    .community-list .siblings:before {
+        content: 'l';
+        font-size: 30px;
+        line-height: 56px;
+    }
+
+    .community-list .siblings:hover {
+        text-decoration: none;
+    }
+
+.user-data .note {
+    text-align: right;
+    padding: 0;
+    font-size: 14px;
+}
+.sidebar-container .community-list .icon-container {
+    width: 50px;
+    height: 50px;
+}
+
+    .sidebar-container .community-list .icon-container .icon {
+        width: 48px;
+        height: 48px;
+    }
+
+.sidebar-container .community-list .user-community .icon-container {
+    padding: 0 0 0 10px;
+}
+.community-list .community-list-body {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+}
+#sidebar-community-img {
+    width: 58px;
+    float: left;
+}
+
+#sidebar-community-body {
+    padding: 13px 15px 5px;
+    display: block;
+    *zoom: 1;
+}
+.platform-tag {
+    position: static;
+    float: left;
+    margin: 1px 5px 0 0;
+    display: inline-block;
+}
+
+    .platform-tag img {
+        width: 58px;
+        height: 12px;
+    }
+.community-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 3px 0 0 68px;
+    line-height: 1.2;
+    color: #323232;
+}
+
+.community-view-region {
+    margin: 3px 0 0 68px;
+    line-height: 1.2;
+    color: #323232;
+}
+
+    .community-name a {
+        color: #323232;
+    }
+
+        .community-name a:hover {
+            text-decoration: underline;
+        }
+
+    .community-name .owner {
+        display: inline-block;
+        padding: 2px 5px;
+        background: #f6f6f6;
+        color: #969696;
+        font-size: 12px;
+        line-height: 16px;
+        margin-left: 5px;
+        margin-top: 5px;
+        font-weight: normal;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+.news-community-badge {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    background: #5ac800;
+    font-size: 10px;
+    color: #FFF;
+    margin-left: 10px;
+    padding: 1px 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    top: -3px;
+}
+
+    .news-community-badge + .title {
+        margin-top: -3px;
+    }
+
+.user-data .data-content.user-main-profile {
+    display: block;
+}
+
+    .user-data .data-content.user-main-profile h4 {
+        display: inline-block;
+        float: left;
+        width: auto;
+        margin: 2px 0 0 0;
+    }
+
+    .user-data .data-content.user-main-profile .note {
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+.user-data .data-content.game .note div {
+    margin: 0 0 0 5px;
+}
+
+.user-data .data-content.game .note span {
+    display: none;
+}
+
+.user-data .data-content {
+    display: table;
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+.user-data h4 {
+    color: #fff;
+    width: 1%;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+    .user-data h4 span {
+        background-color: #5ac800;
+        padding: 2px 12px 1px;
+        display: block;
+        white-space: nowrap;
+        margin-bottom: -1px;
+        font-size: 12px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px;
+    }
+
+.user-data .note {
+    border-bottom: 2px dashed #ddd;
+    display: table-cell;
+    font-size: 14px;
+    text-align: right;
+    padding: 0 0 0 4px;
+}
+
+.user-data .user-main-profile {
+    display: block;
+}
+
+    .user-data .user-main-profile h4 {
+        display: inline-block;
+        float: left;
+        width: auto;
+        margin: 2px 0 0 0;
+    }
+
+    .user-data .user-main-profile .note {
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+        .user-data .user-main-profile .note.birthday {
+            margin-bottom: 5px;
+        }
+
+.user-data .game h4,
+.user-data .game-skill h4,
+.user-data .game .note,
+.user-data .game-skill .note {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+    .user-data .game-skill .note span:before {
+        width: 26px;
+        height: 26px;
+        margin-right: 5px;
+        vertical-align: text-bottom;
+        display: inline-block;
+        content: '';
+        margin-bottom: 2px;
+        background-size: 26px auto;
+    }
+
+.user-data .game-skill span.beginner:before {
+    background-image: url('https://web.archive.org/web/20171014155928im_/https://d13ph7xrk1ee39.cloudfront.net/img/skill-beginner.png?HpMNeLjZoQcmVPxIGweFtQ');
+}
+
+.user-data .game-skill span.intermediate:before {
+    background-image: url('https://web.archive.org/web/20171014155928im_/https://d13ph7xrk1ee39.cloudfront.net/img/skill-intermediate.png?5QnWC_Dxa-Zzw5Jkjx6wWQ');
+}
+
+.user-data .game-skill span.expert:before {
+    background-image: url('https://web.archive.org/web/20171014155928im_/https://d13ph7xrk1ee39.cloudfront.net/img/skill-expert.png?1LV2EjGEwqQSeS63XfbmCQ');
+}
+
+.user-data .game .note > div {
+    display: inline-block;
+}
+
+.user-data .game .note img {
+    vertical-align: text-bottom;
+    margin-bottom: 2px;
+    margin-right: 3px;
+}
+
+.user-data .game .note span {
+    display: none;
+}
+
+.user-data .game .note .wiiu-icon {
+    width: 28px;
+}
+
+.user-data .game .note .n3ds-icon {
+    width: 21px;
+}
+
+.user-data .favorite-game-genre .note span {
+    display: inline-block;
+}
+
+    .user-data .favorite-game-genre .note span:after {
+        content: "/";
+        padding: 0 3px;
+    }
+
+    .user-data .favorite-game-genre .note span:last-child:after {
+        content: none;
+        padding: 0;
+    }
+
+.main-column {
+    width: auto;
+    margin: 0 auto;
+}
+#sidebar + .main-column {
+    float: left;
+}
+
+.sidebar-container {
+    margin: 0 0 15px 0;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+    .sidebar-container .report-buttons-content {
+        padding: 0 10px 10px;
+        margin: -5px 0 0;
+    }
+
+    .sidebar-container .button {
+        margin: 5px auto 20px;
+        width: 80%;
+    }
+
+    .sidebar-container .shop-buttons-container .button-shop {
+        margin-bottom: 10px;
+    }
+
+    .sidebar-container .shop-buttons-notice {
+        margin: 0 15px 15px;
+        font-size: 12px;
+        color: #969696;
+    }
+
+    .sidebar-container h4 a {
+        clear: both;
+        display: block;
+        padding: 11px 20px 9px 15px;
+        background: url('https://web.archive.org/web/20171014155928im_/https://d13ph7xrk1ee39.cloudfront.net/img/icon-arrow-right.png?TpPVEO8Ph-EtyWDHwVrA4Q') no-repeat 97.5% center;
+        color: #323232;
+        -webkit-background-size: 9px 15px;
+        -moz-background-size: 9px 15px;
+        -ms-background-size: 9px 15px;
+        -o-background-size: 9px 15px;
+        background-size: 9px 15px;
+        display: table;
+        width: 100%;
+        padding: 0;
+        position: relative;
+    }
+
+        .sidebar-container h4 a:hover {
+            background-color: #f9f9f9;
+        }
+
+        .sidebar-container h4 a:before {
+            font-size: 20px;
+            line-height: 20px;
+            vertical-align: middle;
+            padding: 0 8px 0 12px;
+            width: 27px;
+            text-align: center;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+        }
+
+    .sidebar-container h4 .favorite-community-button:before {
+        content: "s";
+        color: #f79726;
+    }
+
+    .sidebar-container .community-list .icon-container {
+        width: 50px;
+        height: 50px;
+    }
+
+        .sidebar-container .community-list .icon-container .icon {
+            width: 48px;
+            height: 48px;
+        }
+
+    .sidebar-container .community-list .user-community .icon-container {
+        padding: 0 0 0 10px;
+    }
+
+        .sidebar-container .community-list .user-community .icon-container .icon,
+        .sidebar-container .community-list .user-community .icon-container .user-icon {
+            width: 32px;
+            height: 32px;
+        }
+
+    .sidebar-container .community-list .title {
+        background-image: none;
+        border: none;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .sidebar-container .community-list .text {
+        display: none;
+    }
+
+    .sidebar-container .more-button {
+        padding: 8px 0;
+        text-align: center;
+        background-image: none;
+    }
+
+.sidebar-cover-image {
+
+}
+
+.sidebar-cover-community {
+    min-height: 168px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#sidebar-cover {
+    min-height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+    #sidebar-cover img {
+        display: block;
+        width: 100%;
+        -webkit-border-radius: 5px 5px 0 0;
+        -moz-border-radius: 5px 5px 0 0;
+        -ms-border-radius: 5px 5px 0 0;
+        -o-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+.sidebar-setting li {
+    border-top: 1px solid #ddd;
+}
+
+    .sidebar-setting li:first-child {
+        border: none;
+    }
+
+.sidebar-setting a {
+    clear: both;
+    padding: 11px 20px 9px 15px;
+    background: url('https://web.archive.org/web/20171014155928im_/https://d13ph7xrk1ee39.cloudfront.net/img/icon-arrow-right.png?TpPVEO8Ph-EtyWDHwVrA4Q') no-repeat 97.5% center;
+    color: #323232;
+    -webkit-background-size: 9px 15px;
+    -moz-background-size: 9px 15px;
+    -ms-background-size: 9px 15px;
+    -o-background-size: 9px 15px;
+    background-size: 9px 15px;
+    border-top: 1px solid #ddd;
+    display: block;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+    .sidebar-setting a:first-child {
+        border: none;
+    }
+
+    .sidebar-setting a:before {
+        font-size: 20px;
+        line-height: 20px;
+        vertical-align: middle;
+        padding: 0 8px 0 12px;
+        width: 27px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+    }
+
+    .sidebar-setting a > span {
+        padding: 12px 30px 12px 47px;
+        vertical-align: middle;
+        display: block;
+    }
+
+    .sidebar-setting a.with-count > span {
+        padding-right: 85px;
+    }
+
+    .sidebar-setting a.with-count > .post-count {
+        width: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+        .sidebar-setting a.with-count > .post-count span {
+            font-size: 12px;
+            line-height: 12px;
+            background-color: rgba(0, 0, 0, 0.05);
+            color: #969696;
+            padding: 4px 8px;
+            min-width: 30px;
+            display: inline-block;
+            text-align: center;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+    .sidebar-setting a.selected {
+        background-color: #f9f9f9;
+    }
+
+        .sidebar-setting a.selected span {
+            font-weight: bold;
+        }
+
+.sidebar-setting .sidebar-menu-setting:before {
+    content: "Y";
+    color: #5ac800;
+}
+
+.sidebar-setting .sidebar-menu-info:before {
+    content: "w";
+    color: #5ac800;
+}
+
+.sidebar-setting .sidebar-menu-support:be fore {
+    content: "h";
+    color: #5ac800;
+}
+
+.sidebar-setting .sidebar-menu-guide:before {
+    content: "g";
+    color: #5ac800;
+}
+
+.sidebar-setting .sidebar-menu-diary:before {
+    content: "%";
+    color: #04c9db;
+}
+
+.sidebar-setting .sidebar-menu-artwork:before {
+    content: "M";
+    color: #fcc735;
+}
+
+.sidebar-setting .sidebar-menu-topic:before {
+    content: "$";
+    color: #e8316e;
+    font-size: 23px;
+}
+
+.sidebar-setting .sidebar-menu-in_game:before {
+    content: "&";
+    color: #5ac800;
+}
+
+.sidebar-setting .sidebar-menu-relation:before {
+    content: "l";
+    color: #5ac800;
+}
+
+.sidebar-setting .sidebar-menu-post:before {
+    content: "p";
+    color: #5ac800;
+}
+
+.sidebar-setting .sidebar-menu-album:before {
+    content: "X";
+}
+
+.sidebar-setting .sidebar-menu-empathies:before {
+    content: "e";
+    color: #5ac800;
+}
+
+#sidebar-profile-body {
+    padding: 0 15px 10px;
+    *zoom: 1;
+}
+
+    #sidebar-profile-body:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #sidebar-profile-body .icon-container {
+        width: 74px;
+        height: 74px;
+        float: left;
+        position: relative;
+    }
+
+    #sidebar-profile-body .icon {
+        width: 72px;
+        height: 72px;
+        border: 1px solid #ddd;
+        margin-top: 0;
+        background-color: #fff;
+    }
+
+    #sidebar-profile-body .user-organization {
+        margin: 15px 0 -10px 85px;
+        line-height: 1.2em;
+    }
+
+    #sidebar-profile-body .nick-name {
+        color: #323232;
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        margin: 15px 0 0 85px;
+        line-height: 1.2;
+        padding-top: 8px;
+    }
+
+        #sidebar-profile-body .nick-name:hover {
+            text-decoration: underline;
+        }
+
+    #sidebar-profile-body .user-organization + .nick-name {
+        margin-top: 2px;
+    }
+
+    #sidebar-profile-body .id-name {
+        color: #969696;
+        font-size: 14px;
+        margin-left: 85px;
+        font-weight: normal;
+    }
+
+    #sidebar-profile-body.with-profile-post-image .user-organization {
+        margin-top: 10px;
+    }
+
+    #sidebar-profile-body.with-profile-post-image .icon-container {
+        margin-top: -20px;
+    }
+
+    #sidebar-profile-body.with-profile-post-image .nick-name {
+        padding-top: 0;
+        margin-top: 10px;
+    }
+
+#sidebar-profile-status {
+    background: #f6f6f6;
+    display: table;
+    width: 100%;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -ms-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    margin-bottom: 0px;
+    padding-left: 0;
+}
+
+    #sidebar-profile-status li {
+        font-size: 10px;
+        text-align: center;
+        display: table-cell;
+        min-width: 70px;
+    }
+
+        #sidebar-profile-status li:last-child a span {
+            border-right: none;
+        }
+
+        #sidebar-profile-status li a {
+            color: #9f9f9f;
+            display: block;
+            padding: 10px 0;
+        }
+
+            #sidebar-profile-status li a > span {
+                display: block;
+                border-right: 1px solid #ddd;
+            }
+
+            #sidebar-profile-status li a:hover {
+                text-decoration: underline;
+            }
+
+            #sidebar-profile-status li a.selected {
+                font-weight: bold;
+                background-image: url('https://web.archive.org/web/20171014155928im_/https://d13ph7xrk1ee39.cloudfront.net/img/bg-select.png?-DjUmX6699ZZO-NTmZKmWQ');
+                background-size: 6px auto;
+            }
+
+    #sidebar-profile-status .number {
+        color: #323232;
+        font-size: 18px;
+        display: block;
+        margin-bottom: -2px;
+    }
+
+.user-sidebar #sidebar-cover img,
+.general-sidebar #sidebar-cover img {
+    display: none;
+}
+
+.user-sidebar .button:before {
+    display: inline-block;
+    margin-top: -2px;
+    margin-right: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.user-sidebar #edit-profile-settings .button:before {
+    content: 'Z';
+}
+
+.user-sidebar .unfollow-button {
+    padding-right: 35px;
+    position: relative;
+}
+
+    .user-sidebar .unfollow-button:before {
+        background-color: #969696;
+        content: "x";
+        position: absolute;
+        right: 0;
+        top: 0px;
+        height: 100%;
+        margin: 0;
+        width: 35px;
+        color: #fff;
+        line-height: 45px;
+        -webkit-border-radius: 0 5px 5px 0;
+        -moz-border-radius: 0 5px 5px 0;
+        -ms-border-radius: 0 5px 5px 0;
+        -o-border-radius: 0 5px 5px 0;
+        border-radius: 0 5px 5px 0;
+    }
+
+.user-sidebar .follow-button:before {
+    color: #5ac800;
+    font-size: 13px;
+    content: "Q";
+}
+
+.user-sidebar .follow-done-button:before {
+    color: #5ac800;
+    content: "v";
+}
+
+.user-sidebar .follow-done-button:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.sidebar-profile {
+    padding: 20px 15px 20px 15px;
+}
+
+    .sidebar-profile .profile-comment {
+        color: #646464;
+        background-color: #f6f6f6;
+        margin-bottom: 10px;
+        padding: 15px;
+        line-height: 1.5;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        *zoom: 1;
+    }
+
+        .sidebar-profile .profile-comment:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+@media screen and (max-width: 980px) {
+    #sidebar,
+    .main-column {
+        width: 100%;
+        float: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}

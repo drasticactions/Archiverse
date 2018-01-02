@@ -1,0 +1,211 @@
+﻿.post-memo {
+    z-index: 2;
+}
+
+.home {
+    font-size: x-large;
+}
+
+.youtube-embed {
+    margin: 0 auto;
+    display: block;
+}
+
+.divider-vertical {
+    height: 1px;
+    margin: 3px 9px;
+    background-color: #F2F2F2;
+}
+
+.post-memo .placeholder {
+    z-index: 1;
+}
+
+.loader-parent {
+    position: relative;
+}
+
+.loader-child {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.community-metadata {
+    border-radius: 5px, 0, 5px, 5px;
+}
+
+.user-metadata {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.community-header-link {
+    color: black;
+    font-weight: bold;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    font-size: 18px;
+}
+
+.empty-message {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.error-message {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.modal-body {
+    color: #323232;
+    background: #eee url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwBAMAAADMe/ShAAAAHlBMVEX29vb09PTy8vL19fXz8/Px8fHw8PDv7+/u7u739/dHdNvrAAACSElEQVR4AezYNX7DMBiGcafcKTRlC0hdy7T1Z7iAcS5YOkEl38DeQlNOW24YX63fsxr+Ztm2RmvjMiu2bWbOXPmjtW2A7S8YKlfMCK4lKPzeMoJvYhROHYIJno9gggkmmGCCCSaYYIIJJphgggkmGP/PZQZf4XDHCK5JFFYtE7hXkwWYap0awEMPh8NHA7jPNQprv2EAH5zh8MsTDo9vY/xGxuCeLXFYsVMY7nNZwCm/AcM3scZhnTooPBwfafBYP4JwiZvBfgWDh7Xxkc71DmXjY916hOAbLrMxK7ZuTOfKdxC4ZMf6z1Ui2iEh/2Sdssru8L4dy+zXFVGbuVtntyPxK+cqZRc7wr1Ll0v95/qser1DVZv/yVr5bv10Bczq+ML4Rl/als/ww4WfJptbwuACMbgwhaUVfkvgt6LU1icpdkAAAADAEEz/1EKshHOBgMAnwZ7gNgG9DEwybTKpyZiLRCT6ItqUCJuIYqKoosaJlEsMJBki+ZOElwRfkpqSuElcS9Qnd4LcGN3enRUACMRQDFSDJRzg3wIKuNnNzygYA83rGbx9g1cwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPB/bFgfx7ZH4TWJ7DB0W9w5hwcdgen7MHxfp8r9IFGkKQEEU6WHWWhVZaWZTFdlg9mwWSdiAZRbJABB+FzkHoHcXuQ82cDBtlkQzVSkc1yZEMk2fRKNjZTzetkg0LlhJK1KjAYDAaDwWAwGAwGg8FgcAD3L/H6J4DLS/j67eEOl9GYoKbAV2YAAAAASUVORK5CYII=');
+    background-attachment: fixed;
+    -webkit-background-size: 10px;
+    -moz-background-size: 10px;
+    -ms-background-size: 10px;
+    -o-background-size: 10px;
+    background-size: 10px;
+}
+
+.post .community-container-heading {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.scroll-box {
+    overflow-y: auto;
+    max-height: calc(100vh - 625px);
+}
+
+.game-scroll-box {
+    overflow-y: auto;
+    max-height: calc(100vh - 350px);
+}
+
+.community-header-link a:hover {
+    color: #646464;
+}
+
+.community-header-link .community-icon {
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+@media only screen and (max-height: 440px) {
+    .album-dialog img {
+        margin-bottom: 10px;
+        max-height: 140px;
+    }
+
+    .album-dialog .album-close-button {
+        margin-top: 15px;
+    }
+}
+
+.body-contents {
+    margin-top: 15px;
+}
+
+.main-nav li .glyphicon {
+    margin-right: 10px;
+}
+
+/* Highlighting rules for nav menu items */
+.main-nav li a.active,
+.main-nav li a.active:hover,
+.main-nav li a.active:focus {
+    background-color: #81c576;
+    color: white;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+}
+
+.navbar {
+    background-color: white;
+    color: #323232;
+}
+
+.nav li a {
+    color: #323232;
+}
+
+.navbar {
+    box-shadow: 5px 3px 6px 1px #999;
+}
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    body {
+        padding-top: 50px;
+    }
+    .navbar-brand-image {
+        max-width: 200px;
+        padding-top: 6px;
+    }
+    .navbar {
+        box-shadow: 0 8px 6px -6px #999;
+    }
+}
+
+@media (min-width: 768px) {
+    /* On small screens, convert the nav menu to a vertical sidebar */
+    .main-nav {
+        height: 100%;
+        width: calc(25% - 20px);
+    }
+    .main-nav .navbar {
+        border-radius: 0px;
+        border-width: 0px;
+        height: 100%;
+    }
+    .main-nav .navbar-header {
+        float: none;
+    }
+    .main-nav .navbar-collapse {
+        border-top: 1px solid #444;
+        padding: 0px;
+    }
+    .main-nav .navbar ul {
+        float: none;
+    }
+    .main-nav .navbar li {
+        float: none;
+        font-size: 15px;
+        margin: 6px;
+    }
+    .main-nav .navbar li a {
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+    .main-nav .navbar a {
+        /* If a menu item's text is too long, truncate it */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
