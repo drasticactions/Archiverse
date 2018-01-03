@@ -90,9 +90,11 @@ class UsersSearchView extends React.Component<Props, {}> {
                 if (parsed.sortTitle == 'desc')
                     this.search.sortName = SortTitle.Desc;
             }
-
-            
         }
+    }
+
+    searchPostState() {
+        return this.search.sortFriends != SortPosts.None || this.search.sortFollowers != SortPosts.None || this.search.sortFollowing != SortPosts.None;
     }
 
     renderSidebarCover(coverUri: string) {
@@ -134,6 +136,48 @@ class UsersSearchView extends React.Component<Props, {}> {
             <p className="id-name">{user.name}</p>
             <p className="id-name">{user.country}</p>
         </div>
+    }
+
+    renderNumber(num: Number) {
+        return num > 0 ? num : "-";
+    }
+
+    renderUserProfileFriendMetadata(user: User) {
+        return <ul id="sidebar-profile-status">
+            <li>
+                <a target='_blank'
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    <span>
+                        <span className="number test-friend-count">
+                            {this.renderNumber(user.friendsCount)} / 100
+                        </span>
+                        Friends
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a target='_blank'
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    <span>
+                        <span className="number test-following-count">
+                            {this.renderNumber(user.followingCount)}
+                        </span>
+                        Following
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a target='_blank'
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    <span>
+                        <span className="number test-follower-count">
+                            {this.renderNumber(user.followerCount)}
+                        </span>
+                        Followers
+                    </span>
+                </a>
+            </li>
+        </ul>;
     }
 
     renderUserProfileMetadata(user: User) {
@@ -181,7 +225,7 @@ class UsersSearchView extends React.Component<Props, {}> {
                 <div className="sidebar-container">
                     {sidebarCover}
                     {this.renderProfileBody(user)}
-                    {this.renderUserProfileMetadata(user)}
+                    {this.searchPostState() ? this.renderUserProfileFriendMetadata(user) : this.renderUserProfileMetadata(user)}
                 </div>
             </div>
         );
