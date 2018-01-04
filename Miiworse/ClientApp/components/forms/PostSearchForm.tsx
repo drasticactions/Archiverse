@@ -13,7 +13,7 @@ export class PostSearchForm extends React.Component<{ search: PostSearch }, {}> 
     
     @observable isOpen: boolean = false;
     @observable isDirty: boolean = false;
-    @observable searchText: string = "Show Advance Search Options";
+    @observable searchText: string = "Show Advanced Search Options";
     
     refs: {
         communityPickerModal: CommunityPickerModal;
