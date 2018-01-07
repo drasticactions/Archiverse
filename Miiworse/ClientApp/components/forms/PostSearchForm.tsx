@@ -73,7 +73,7 @@ export class PostSearchForm extends React.Component<{ search: PostSearch }, {}> 
                     </FormGroup>
                     <FormGroup>
                         <InputField type="text"
-                            label="Username"
+                            label="Nintendo Network Id (Case Sensitive)"
                             name="name"
                             onChange={(x, y) => this.updateProperty(x, y)}
                             value={this.props.search.name} />
