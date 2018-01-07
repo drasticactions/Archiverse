@@ -42,7 +42,7 @@ export class UserSearchForm extends React.Component<{ search: UserSearch }, {}> 
                 <form>
                     <FormGroup>
                         <InputField type="text"
-                            label="Nintendo Network Id (Case Sensitive)"
+                            label="Nintendo Network ID (Case Sensitive)"
                             name="name"
                             onChange={(x, y) => this.updateProperty(x, y)}
                             value={this.props.search.name} />
