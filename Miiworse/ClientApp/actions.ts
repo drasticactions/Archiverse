@@ -12,6 +12,14 @@ export class Actions {
         }
     }
 
+    createImageUrlArray(url: string, fallbackUrl: string) {
+        return [
+            "https://web.archive.org/web/20171110012107if_/" + url,
+            "https://web.archive.org/web/20171031231339im_/" + url,
+            fallbackUrl
+        ];
+    }
+
     generateGuid() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
             var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);

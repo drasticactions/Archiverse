@@ -7,6 +7,7 @@ import { AppState, PagedResults, Post } from '../appState';
 import VisibilitySensor = require('react-visibility-sensor');
 import { Link } from 'react-router-dom';
 import * as he from 'he';
+import actions from '../actions';
 
 @observer
 export class PostView extends React.Component<{post: Post, isReply?: boolean}, {}> { 
@@ -24,9 +25,10 @@ export class PostView extends React.Component<{post: Post, isReply?: boolean}, {
         if (imageUri == "") return <div></div>
         let missing = isDrawing ? '/img/missing-drawing.png' : '/img/missing.png';
         let loading = isDrawing ? '/img/placeholder-drawing.png' : '/img/placeholder.png';
+        let imageArray = actions.createImageUrlArray(imageUri, missing);
         return <Img 
         className="post-memo"
-            src={["https://web.archive.org/web/20171110012107if_/" + imageUri, missing]}
+            src={imageArray}
             loader={<img className="post-memo placeholder"
                 src={loading}></img>}
         ></Img>
@@ -43,6 +45,7 @@ export class PostView extends React.Component<{post: Post, isReply?: boolean}, {
     render() {
         let post = this.props.post;
         let header = !this.props.isReply ? <header className="community-container">
+
             <h1 className="community-container-heading">
                 <Link to={`/games/${post.gameId}`}>
                     <Img className="community-icon"
@@ -60,7 +63,7 @@ export class PostView extends React.Component<{post: Post, isReply?: boolean}, {
                 <div className="user-content"> 
                     <a className="icon-container">
                         <Img className="icon" 
-                        src={["https://web.archive.org/web/20171110012107if_/" + post.iconUri, '/img/anonymous-mii.png']}
+                            src={actions.createImageUrlArray(post.iconUri, '/img/anonymous-mii.png')}
                         loader={<img
                         className="icon" 
                         src="/img/spinner.gif"></img>}
