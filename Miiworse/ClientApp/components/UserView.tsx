@@ -35,7 +35,7 @@ class UserView extends React.Component<Props, {}> {
         this.viewState.userDoesNotExist = false;
         if (this.props.match != null) {
             //console.log(this.props.match);
-            this.search.name = this.props.match.params.id;
+            this.search.name = he.decode(this.props.match.params.id);
             actions.setCurrentUser(this.viewState, this.search, true);
         }
     }

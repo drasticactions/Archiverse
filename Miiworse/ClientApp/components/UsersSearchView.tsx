@@ -50,7 +50,7 @@ class UsersSearchView extends React.Component<Props, {}> {
     parseQueryString(parsed) {
         if (parsed != null) {
             if (parsed.name != null)
-                this.search.name = parsed.name;
+                this.search.name = he.decode(parsed.name);
 
             if (parsed.screenName != null)
                 this.search.screenName = parsed.screenName;
@@ -114,9 +114,9 @@ class UsersSearchView extends React.Component<Props, {}> {
 
     renderUserUrl(user: User) {
         return user.screenName == null || user.screenName == '' ? <a target='_blank'
-            href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}
+            href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${he.encode(user.name)}`}
             className="nick-name">{this.renderScreenname(user.screenName)}</a>
-            : <Link className="nick-name" to={`users/${user.name}`}>{he.decode(user.screenName)}</Link>
+            : <Link className="nick-name" to={`users/${he.encode(user.name)}`}>{he.decode(user.screenName)}</Link>
     }
 
     renderProfileBody(user: User) {
@@ -124,7 +124,7 @@ class UsersSearchView extends React.Component<Props, {}> {
         let iconUri = `https://web.archive.org/web/20171014154111im_/${user.iconUri}`;
         return <div id="sidebar-profile-body" className={className}>
             <div className="icon-container">
-                <a target='_blank' href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                <a target='_blank' href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${he.encode(user.name)}`}>
                     <Img src={[iconUri, '/img/anonymous-mii.png']} alt={user.screenName}
                         loader={<img
                             className="icon"
@@ -146,7 +146,7 @@ class UsersSearchView extends React.Component<Props, {}> {
         return <ul id="sidebar-profile-status">
             <li>
                 <a target='_blank'
-                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${he.encode(user.name)}`}>
                     <span>
                         <span className="number test-friend-count">
                             {this.renderNumber(user.friendsCount)} / 100
@@ -157,7 +157,7 @@ class UsersSearchView extends React.Component<Props, {}> {
             </li>
             <li>
                 <a target='_blank'
-                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${he.encode(user.name)}`}>
                     <span>
                         <span className="number test-following-count">
                             {this.renderNumber(user.followingCount)}
@@ -168,7 +168,7 @@ class UsersSearchView extends React.Component<Props, {}> {
             </li>
             <li>
                 <a target='_blank'
-                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${he.encode(user.name)}`}>
                     <span>
                         <span className="number test-follower-count">
                             {this.renderNumber(user.followerCount)}
@@ -184,7 +184,7 @@ class UsersSearchView extends React.Component<Props, {}> {
         return <ul id="sidebar-profile-status">
             <li>
                 <a target='_blank'
-                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${he.encode(user.name)}`}>
                     <span>
                         <span className="number test-friend-count">
                             {user.totalPosts}
@@ -195,7 +195,7 @@ class UsersSearchView extends React.Component<Props, {}> {
             </li>
             <li>
                 <a target='_blank'
-                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${he.encode(user.name)}`}>
                     <span>
                         <span className="number test-following-count">
                             {user.totalReplies}
@@ -206,7 +206,7 @@ class UsersSearchView extends React.Component<Props, {}> {
             </li>
             <li>
                 <a target='_blank'
-                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${user.name}`}>
+                    href={`https://web.archive.org/web/20171014154111/https://miiverse.nintendo.net/users/${he.encode(user.name)}`}>
                     <span>
                         <span className="number test-follower-count">
                             {user.totalDeletedPosts}

@@ -68,7 +68,7 @@ export class PostView extends React.Component<{post: Post, isReply?: boolean}, {
                     </a>
                     <div className="user-name-content">
                         <p className="user-name">
-                            <Link to={`/users/${post.name}`}>{this.renderScreenname(post.screenName)}</Link>
+                            <Link to={`/users/${he.encode(post.name)}`}>{this.renderScreenname(post.screenName)}</Link>
                             <span className="user-id">{post.name}</span>
                         </p>
                         <p className="timestamp-container">
