@@ -62,8 +62,9 @@ namespace Miiworse
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
 
-                routes.MapSpaFallbackRoute(
+                routes.MapRoute(
                     name: "spa-fallback",
+                    template: "{*url}",
                     defaults: new { controller = "Home", action = "Index" });
             });
         }
