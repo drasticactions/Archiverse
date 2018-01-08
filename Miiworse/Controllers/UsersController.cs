@@ -48,7 +48,7 @@ namespace Miiworse.Controllers
 
             if (!string.IsNullOrEmpty(result.screenName))
             {
-                query = query.Where(n => n.ScreenName == result.screenName);
+                query = query.Where(n => n.ScreenName.Equals(result.screenName, StringComparison.OrdinalIgnoreCase));
             }
 
             if (!string.IsNullOrEmpty(result.name))
@@ -58,7 +58,7 @@ namespace Miiworse.Controllers
 
             if (!string.IsNullOrEmpty(result.country))
             {
-                query = query.Where(n => n.Country == result.country);
+                query = query.Where(n => n.Country.Equals(result.country, StringComparison.OrdinalIgnoreCase));
             }
 
             if (result.sortGameSkill != GameSkill.None)
