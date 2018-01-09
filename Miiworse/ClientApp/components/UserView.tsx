@@ -75,11 +75,11 @@ class UserView extends React.Component<Props, {}> {
         return country == null || country == '' ? "Hidden" : country;
     }
 
-    renderNumber(num: Number) {
+    renderNumber(num: number) {
         return num > 0 ? num : "-";
     }
 
-    renderGameskill(num: Number) {
+    renderGameskill(num: number) {
         switch (num) {
             case 0:
                 return "Expert";
@@ -91,6 +91,24 @@ class UserView extends React.Component<Props, {}> {
                 return "Beginner";
             default:
                 return "Hidden";
+        }
+    }
+
+    renderIconN3DS(owned: string) {
+        if (owned.indexOf("Nintendo3DS") > -1) {
+            return <div className="device-n3ds">
+                <img className="n3ds-icon" src="img/n3ds.png"></img>
+                <span>System in the Nintendo 3DS Family</span>
+            </div>;
+        }
+    }
+
+    renderIconWiiU(owned: string) {
+        if (owned.indexOf("NintendoWiiU") > -1) {
+            return <div className="device-wiiu">
+                <img className="wiiu-icon" src="img/wiiu.png"></img>
+                <span>Wii U</span>
+            </div>;
         }
     }
 
@@ -192,7 +210,10 @@ class UserView extends React.Component<Props, {}> {
             </div>
             <div className="game data-content">
                 <h4><span>Systems Owned</span></h4>
-                <div className="note">{user.gameSystem}</div>
+                <div className="note">
+                    {this.renderIconWiiU(user.gameSystem)}
+                    {this.renderIconN3DS(user.gameSystem)}
+                </div>
             </div>
             <div className="favorite-game-genre">
                 <h4><span>Favorite Game Genres</span></h4>
