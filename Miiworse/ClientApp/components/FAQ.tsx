@@ -101,6 +101,19 @@ export class FAQ extends React.Component<RouteComponentProps<{}>, {}> {
                     </div>
                 </div>
                 <div className="panel panel-default ">
+                    <div className="panel-heading accordion-toggle question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question7">
+                        <h4 style={{ fontSize: "x-large" }} className="panel-title">
+                            <span style={{ cursor: "pointer" }} className="ing">I'm trying to find more information on the Betty and Veronica comics. Where are they?</span>
+                        </h4>
+                    </div>
+                    <div id="question7" className="panel-collapse collapse in">
+                        <div className="panel-body">
+                            <p>The name of this website is "Archiverse," a combination of "Archive" and "Verse," with the characters "ve" being shared between the two. This site has no affiliation, nor information, on Archie, Riverdale, or any of those casts and characters.</p>
+                            <p>Likewise, there is no information on the Sonic the Hedgehog comic books created by Archie Comics. You will not find any info on Sally Acorn, Rotor Walrus, Antoine D'Coolette (which, apparently, is a real name that I didn't make up), and Bunnie Rabbot.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="panel panel-default ">
                     <div className="panel-heading accordion-toggle question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question6">
                         <h4 style={{ fontSize: "x-large" }} className="panel-title">
                             <span style={{ cursor: "pointer" }} className="ing">Who can I contact about Archiverse?</span>
