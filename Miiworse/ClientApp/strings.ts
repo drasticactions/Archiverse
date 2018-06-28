@@ -8,7 +8,7 @@ export class Strings {
     @observable FAQ: string = "FAQ";
 
     @observable LanguageName: string = "Language";
-    @observable Language: ILanguage;
+    @observable Language: ILanguage = new ILanguage();
 }
 
 export class Options {
