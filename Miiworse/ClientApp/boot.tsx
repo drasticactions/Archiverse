@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Provider } from 'mobx-react';
 import * as RoutesModule from './routes';
 import { AppState } from './appState';
+
 let routes = RoutesModule.routes;
 
 declare var module: any;
@@ -17,6 +18,23 @@ const appState = new AppState();
 const stores = {
     appState: appState,
 };
+
+try {
+    switch (navigator.language.toLowerCase()) {
+        case "en-us":
+            appState.LanguageManager.EnglishStrings(appState.strings);
+            break;
+        case "ja-jp":
+            appState.LanguageManager.JapaneseStrings(appState.strings);
+            break;
+        default:
+            appState.LanguageManager.EnglishStrings(appState.strings);
+            break;
+    }
+} catch (e) {
+    appState.LanguageManager.EnglishStrings(appState.strings);
+}
+
 
 function renderApp() {
     // This code starts up the React app when it runs in a browser. It sets up the routing

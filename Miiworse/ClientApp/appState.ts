@@ -1,7 +1,16 @@
 ﻿import { observable } from 'mobx';
+import { LanguageManager, Strings } from './strings';
 
 export class AppState {
     @observable currentCount: number = 0;
+    @observable currentLanguage: Language = Language.ja;
+    @observable strings: Strings = new Strings();
+    LanguageManager: LanguageManager = new LanguageManager();
+}
+
+export enum Language {
+    en,
+    ja
 }
 
 export class CommunitySearchViewState {
