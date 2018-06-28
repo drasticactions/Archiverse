@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 import { AppState, Language } from '../appState';
 import { FormControl } from 'react-bootstrap';
-import * as Strings from '../strings';
+import { Strings }from '../strings';
 
 @inject("appState") @observer
 export class NavMenu extends React.Component<{appState?: AppState}, {}> {
@@ -18,7 +18,7 @@ export class NavMenu extends React.Component<{appState?: AppState}, {}> {
         let { strings, currentLanguage, LanguageManager } = this.props.appState;
         switch (+currentLanguage) {
             case Language.en:
-                LanguageManager.EnglishStrings(strings);
+                this.props.appState.strings = new Strings();
                 break;
             case Language.ja:
                 LanguageManager.JapaneseStrings(strings);
@@ -29,7 +29,7 @@ export class NavMenu extends React.Component<{appState?: AppState}, {}> {
     }
 
     public render() {
-        let { strings } = this.props.appState;
+        let { strings, currentLanguage } = this.props.appState;
         if (strings == null) return <div />;
         console.log(this.props.appState.strings);
         return <div className='main-nav'>
@@ -50,7 +50,7 @@ export class NavMenu extends React.Component<{appState?: AppState}, {}> {
                 <div className='navbar-collapse collapse'>
                     <ul className='nav navbar-nav'>
                         <li>
-                            <FormControl onChange={(x) => this.onChannelChange(x)} componentClass="select">
+                            <FormControl value={currentLanguage} onChange={(x) => this.onChannelChange(x)} componentClass="select">
                                 <option value={Language.en}>{strings.Language.English}</option>
                                 <option value={Language.ja}>{strings.Language.Japanese}</option>
                             </FormControl>

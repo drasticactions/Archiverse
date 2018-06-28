@@ -3,7 +3,7 @@ import { LanguageManager, Strings } from './strings';
 
 export class AppState {
     @observable currentCount: number = 0;
-    @observable currentLanguage: Language = Language.ja;
+    @observable currentLanguage: Language = Language.en;
     @observable strings: Strings = new Strings();
     LanguageManager: LanguageManager = new LanguageManager();
 }

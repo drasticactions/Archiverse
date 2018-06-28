@@ -8,7 +8,8 @@ import { AppContainer } from 'react-hot-loader';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Provider } from 'mobx-react';
 import * as RoutesModule from './routes';
-import { AppState } from './appState';
+import { AppState, Language } from './appState';
+import { Strings } from './strings';
 
 let routes = RoutesModule.routes;
 
@@ -22,19 +23,19 @@ const stores = {
 try {
     switch (navigator.language.toLowerCase()) {
         case "en-us":
-            appState.LanguageManager.EnglishStrings(appState.strings);
+            appState.strings = new Strings();
             break;
         case "ja-jp":
+            appState.currentLanguage = Language.ja;
             appState.LanguageManager.JapaneseStrings(appState.strings);
             break;
         default:
-            appState.LanguageManager.EnglishStrings(appState.strings);
+            appState.strings = new Strings();
             break;
     }
 } catch (e) {
-    appState.LanguageManager.EnglishStrings(appState.strings);
+    appState.strings = new Strings();
 }
-
 
 function renderApp() {
     // This code starts up the React app when it runs in a browser. It sets up the routing
