@@ -12,7 +12,7 @@ export class UserSearchForm extends React.Component<{ search: UserSearch }, {}> 
 
     @observable isOpen: boolean = false;
     @observable isDirty: boolean = false;
-    @observable searchText: string = "Show Advance Search Options";
+    @observable searchText: string = "Show Advanced Search Options";
     constants: Constants = new Constants();
 
     updateProperty(key, value) {

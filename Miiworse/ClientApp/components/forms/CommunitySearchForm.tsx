@@ -11,7 +11,7 @@ export class CommunitySearchForm extends React.Component<{ search: GameSearch },
 
     @observable isOpen: boolean = false;
     @observable isDirty: boolean = false;
-    @observable searchText: string = "Show Advance Search Options";
+    @observable searchText: string = "Show Advanced Search Options";
 
     updateProperty(key, value) {
         this.props.search[key] = value;
