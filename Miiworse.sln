@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27110.0
+VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miiworse", "Miiworse\Miiworse.csproj", "{26608E4F-9F0A-476A-B073-D0167B4A7B2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miiworse", "Miiworse\Miiworse.csproj", "{492B44ED-47E2-4F0A-B765-C9DA8F2FAE78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{26608E4F-9F0A-476A-B073-D0167B4A7B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26608E4F-9F0A-476A-B073-D0167B4A7B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26608E4F-9F0A-476A-B073-D0167B4A7B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26608E4F-9F0A-476A-B073-D0167B4A7B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492B44ED-47E2-4F0A-B765-C9DA8F2FAE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492B44ED-47E2-4F0A-B765-C9DA8F2FAE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492B44ED-47E2-4F0A-B765-C9DA8F2FAE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492B44ED-47E2-4F0A-B765-C9DA8F2FAE78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF4DD43A-4813-4A03-B894-39E691CDFDC6}
+		SolutionGuid = {4F88B490-AC13-48C1-BF00-A771B47A3C72}
 	EndGlobalSection
 EndGlobal

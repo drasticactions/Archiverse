@@ -11,7 +11,6 @@ using Newtonsoft.Json;
 
 namespace Miiworse.Controllers
 {
-    [Route("api/[controller]")]
     public class PostsController : Controller
     {
         private readonly MiiverseDatabaseContext _context;
@@ -22,6 +21,19 @@ namespace Miiworse.Controllers
         }
 
         [HttpPost]
+        [Route("api/[controller]/getpost")]
+        public JsonResult GetPostViaId([FromBody] PostResult postResult)
+        {
+            return Json(_context.Posts.FirstOrDefault(n => n.Id == postResult.id));
+        }
+
+        public class PostResult
+        {
+            public string id { get; set; }
+        }
+
+        [HttpPost]
+        [Route("api/[controller]")]
         public PagedResult<Post> GetPostsSearchResults([FromBody] PostSearchResults result)
         {
             // var test = JsonConvert.DeserializeObject<PagedResult<Post>>(TestOutput.PostsString);
