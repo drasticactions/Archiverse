@@ -6,6 +6,7 @@ import { inject, observer } from 'mobx-react';
 import PostsSearchView from './PostsSearchView';
 import UsersSearchView from './UsersSearchView';
 import UserProfileView from './UserProfileView';
+import { FAQ } from './FAQ';
 
 type PathParamsType = {
     param1: string,
@@ -26,6 +27,7 @@ class App extends React.Component<PropsType> {
                 <Route exact path='/posts' component={PostsSearchView} />
                 <Route exact path='/users' component={UsersSearchView} />
                 <Route path='/user/:id' component={UserProfileView} />
+                <Route exact path='/faq' component={FAQ} />
             </Layout>
         );
     }
