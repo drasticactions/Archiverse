@@ -28,13 +28,13 @@ const stores = {
 
 try {
     switch (navigator.language.toLowerCase()) {
-        case "en-us":
-            appState.strings = new Strings();
-            break;
-        case "ja-jp":
-            appState.currentLanguage = Language.ja;
-            appState.LanguageManager.JapaneseStrings(appState.strings);
-            break;
+        //case "en-us":
+        //    appState.strings = new Strings();
+        //    break;
+        //case "ja-jp":
+        //    appState.currentLanguage = Language.ja;
+        //    appState.LanguageManager.JapaneseStrings(appState.strings);
+        //    break;
         default:
             appState.strings = new Strings();
             break;
