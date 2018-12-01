@@ -13,7 +13,7 @@ export enum Language {
     ja
 }
 
-export class CommunitySearchViewState {
+export class GamesViewState {
     @observable isLoading: boolean = false;
     @observable isError: boolean = false;
     @observable isEmpty: boolean = false;

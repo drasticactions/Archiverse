@@ -1,13 +1,8 @@
 ﻿import * as React from 'react';
 import { observable } from 'mobx';
-import { observer, inject } from 'mobx-react';
+import { observer } from 'mobx-react';
 import Img from 'react-image'
-import sizeMe from 'react-sizeme';
-import { RouteComponentProps } from 'react-router';
-import { AppState, PagedResults, Post, UserSearch, User, Constants, SortPosts, SortTitle } from '../appState';
-import { UserSearchForm } from './forms/UserSearchForm'
-import * as query from 'query-string';
-import actions from '../actions';
+import { User } from '../appState';
 import { Link } from 'react-router-dom';
 import * as he from 'he';
 

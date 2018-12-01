@@ -67,7 +67,8 @@ export class PostView extends React.Component<{ post: Post, postReplyModal?: Pos
     renderReplyModalLink(post: Post) {
         return <div style={{ cursor: "pointer" }} onClick={() => this.openPostModal(post)} className="reply symbol">
             <span className="symbol-label">Comment</span>
-            <span className="reply-count">{post.replyCount}</span>
+            <span className="reply-count">{post.replyCount} - </span>
+            <span style={{color: '#007bff'}}>View Replies</span>
         </div>
     }
 

@@ -1,16 +1,12 @@
 ﻿import * as React from 'react';
 import { observable } from 'mobx';
 import { observer, inject } from 'mobx-react';
-import { PostSearchForm } from './forms/PostSearchForm';
 import { PostsSearchModal } from './modal/PostsSearchModal';
 import { Button } from 'reactstrap';
 import sizeMe from 'react-sizeme';
-import { RouteComponentProps } from 'react-router';
 import { AppState, PagedResults, Post, PostSearch, SortPosts } from '../appState';
-import { PostView } from './PostView';
 import { PostsView } from './PostsView';
 import * as query from 'query-string';
-import actions from '../actions';
 
 interface Props {
     appState: AppState;
