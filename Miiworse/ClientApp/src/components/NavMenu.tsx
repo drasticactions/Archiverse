@@ -52,6 +52,20 @@ class NavMenu extends React.Component<{ appState?: AppState }, {}> {
                         </img>
                     </div>
                 </Link>
+                <Collapse className="justifyClassEnd" isOpen={this.state.isOpen} navbar>
+                    <Nav className="dual-nav w-50 order-1 order-md-2 justifyClassEnd" navbar>
+                        <NavItem>
+                            <a className="nav-link" target="_blank" href="https://www.archiveteam.org/">
+                                Archive Team
+                            </a>
+                        </NavItem>
+                        <NavItem>
+                            <a className="nav-link" target="_blank" href="https://github.com/drasticactions/Archiverse">
+                                GitHub
+                            </a>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
             </div>
            
         </Navbar>);

@@ -9,6 +9,7 @@ import UserProfileView from './UserProfileView';
 import GameProfileView from './GameProfileView';
 import GamesSearchView from './GamesSearchView';
 import { FAQ } from './FAQ';
+import { About } from './About';
 
 type PathParamsType = {
     param1: string,
@@ -25,6 +26,7 @@ class App extends React.Component<PropsType> {
         return (
             <Layout>
                 <Route exact path='/' component={PostsSearchView} />
+                <Route exact path='/about' component={About} />
                 <Route path='/post/:id' component={PostsSearchView} />
                 <Route exact path='/posts' component={PostsSearchView} />
                 <Route exact path='/games' component={GamesSearchView} />
