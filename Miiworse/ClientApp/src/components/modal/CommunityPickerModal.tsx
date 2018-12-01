@@ -114,7 +114,7 @@ export class CommunityPickerModal extends React.Component<{}, {}> {
 
 
     render() {
-        let loading = this.isLoading ? <img className="center-block" style={{ height: "100px", width: "100px" }} src="img/spinner.gif"></img> : <div></div>;
+        let loading = this.games == null || this.games.length <= 0 ? <img className="center-block" style={{ height: "100px", width: "100px" }} src="img/spinner.gif"></img> : <div></div>;
         let games = this.games != null ? this.games.map(n => this.renderGame(n)) : "";
         return (
             <div className="group community-container">

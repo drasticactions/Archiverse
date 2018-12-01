@@ -3,7 +3,6 @@ import Layout from './Layout';
 import { Route, withRouter, RouteComponentProps, Switch } from 'react-router';
 import { AppState } from '../appState';
 import { inject, observer } from 'mobx-react';
-import '../App.css';
 import PostsSearchView from './PostsSearchView';
 
 type PathParamsType = {

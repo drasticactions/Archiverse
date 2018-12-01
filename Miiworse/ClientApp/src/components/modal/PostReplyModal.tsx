@@ -42,7 +42,6 @@ export class PostReplyModal extends React.Component<{autoloadPostId?: string}, {
     }
 
     async loadPost() {
-        this.isLoading = true;
         try {
             let method = 'POST';
             let headers = new Headers();
@@ -55,7 +54,6 @@ export class PostReplyModal extends React.Component<{autoloadPostId?: string}, {
         } catch (e) {
             console.error(e);
         }
-        this.isLoading = false;
     }
 
     async loadReplies() {
@@ -72,13 +70,15 @@ export class PostReplyModal extends React.Component<{autoloadPostId?: string}, {
         } catch (e) {
             console.error(e);
         }
+        console.log("hit 2");
         this.isLoading = false;
     }
 
     render() {
         //console.log(this.post);
-        let loading = this.isLoading ? <img className="center-block" style={{ height: "100px", width: "100px" }} src="img/spinner.gif"></img> : <div></div>;
-        let post = this.post != null ? <PostView isReply={true} post={this.post}></PostView> : <div/>
+        let loading = this.post != null && this.post.replyCount > 0 && this.replies.length <= 0 ? <img className="center-block" style={{ height: "100px", width: "100px" }} src="img/spinner.gif"></img> : <div></div>;
+        
+        let post = this.post != null ? <PostView isReply={true} post={this.post}></PostView> : <div />
         let title = this.post != null ? <a className="community-header-link" href={`https://web.archive.org/https://miiverse.nintendo.net/titles/${this.post.titleId}/${this.post.gameId}`} target='_blank'>
         <Img className="community-icon" src={this.post.gameCommunityIconUri}></Img>
         {this.post.gameCommunityTitle}

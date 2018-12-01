@@ -8,7 +8,6 @@ import './css/miiworst.css';
 import './css/react-widgets.css';
 import * as moment from 'moment';
 import * as momentLocalizer from 'react-widgets-moment';
-import registerServiceWorker from './registerServiceWorker';
 import { AppState, Language } from './appState';
 import { BrowserRouter } from 'react-router-dom';
 import { Strings } from './strings';
@@ -16,6 +15,7 @@ import { Provider } from 'mobx-react';
 import createBrowserHistory from 'mobx-history/createBrowserHistory';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@neos21/bootstrap3-glyphicons/dist/css/bootstrap3-glyphicons.css';
+import * as serviceWorker from './serviceWorker';
 
 declare var module: any;
 const appState = new AppState();
@@ -59,10 +59,13 @@ const render = Component => {
 
 render(App);
 
-registerServiceWorker();
-
 if (module.hot) {
     module.hot.accept('./components/App', () => {
         render(App);
     });
 }
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
