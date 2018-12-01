@@ -21,7 +21,7 @@ export class CommunitySearchViewState {
     @observable games: CommunityGame[] = [];
 }
 
-export class UsersSearchViewState {
+export class UsersViewState {
     @observable isLoading: boolean = false;
     @observable isError: boolean = false;
     @observable isEmpty: boolean = false;

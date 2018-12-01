@@ -28,7 +28,7 @@ export class Actions {
         });
     };
 
-    async setCurrentUser(viewState: UserViewState, search: PostSearch, stats?: boolean) {
+    async setCurrentUser(viewState: UserViewState, search: UserSearch, stats?: boolean) {
         try {
             viewState.user = await actions.returnPagedResults(`api/users/getuser`, JSON.stringify(search));
             if (viewState.user == null) {

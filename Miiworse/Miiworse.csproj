@@ -34,13 +34,19 @@
     <None Remove="ClientApp\src\components\fields\CheckboxField.tsx" />
     <None Remove="ClientApp\src\components\fields\InputField.tsx" />
     <None Remove="ClientApp\src\components\forms\PostSearchForm.tsx" />
+    <None Remove="ClientApp\src\components\forms\UserSearchForm.tsx" />
     <None Remove="ClientApp\src\components\Layout.tsx" />
     <None Remove="ClientApp\src\components\modal\CommunityPickerModal.tsx" />
     <None Remove="ClientApp\src\components\modal\PostReplyModal.tsx" />
+    <None Remove="ClientApp\src\components\modal\UsersSearchModal.tsx" />
     <None Remove="ClientApp\src\components\NavMenu.tsx" />
     <None Remove="ClientApp\src\components\PostsSearchView.tsx" />
     <None Remove="ClientApp\src\components\PostsView.tsx" />
     <None Remove="ClientApp\src\components\PostView.tsx" />
+    <None Remove="ClientApp\src\components\UserProfileView.tsx" />
+    <None Remove="ClientApp\src\components\UsersSearchView.tsx" />
+    <None Remove="ClientApp\src\components\UsersView.tsx" />
+    <None Remove="ClientApp\src\components\UserView.tsx" />
     <None Remove="ClientApp\src\strings.ts" />
   </ItemGroup>
 
@@ -50,13 +56,19 @@
     <TypeScriptCompile Include="ClientApp\src\components\fields\CheckboxField.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\fields\InputField.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\forms\PostSearchForm.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\components\forms\UserSearchForm.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\Layout.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\modal\CommunityPickerModal.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\modal\PostReplyModal.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\components\modal\UsersSearchModal.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\NavMenu.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\PostsSearchView.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\PostsView.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\PostView.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\components\UsersSearchView.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\components\UsersView.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\components\UserProfileView.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\components\UserView.tsx" />
     <TypeScriptCompile Include="ClientApp\src\strings.ts" />
   </ItemGroup>
 

@@ -4,9 +4,18 @@ body {
   font-family: sans-serif;
 }
 
-[role="main"] {
-    padding-top: 78px; /* Space for fixed navbar */
-    margin: 15px;
+
+@media only screen and (max-width: 769px) {
+    [role="main"] {
+        margin: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    [role="main"] {
+        padding-top: 58px; /* Space for fixed navbar */
+        margin: 15px;
+    }
 }
 
 .abs-center-x {
