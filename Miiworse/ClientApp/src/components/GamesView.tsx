@@ -50,8 +50,7 @@ export class GamesView extends React.Component<Props, {}> {
     async loadMoreGames(isDirty: boolean) {
         this.viewState.isError = false;
         this.viewState.isEmpty = false;
-
-        if (this.refs.communitySearchForm != null && isDirty) {
+        if (isDirty) {
             this.pagedResults = new PagedResults();
             this.viewState.games = [];
             isDirty = false;
