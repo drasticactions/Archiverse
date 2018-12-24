@@ -84,7 +84,7 @@ export class PostView extends React.Component<{ post: Post, postReplyModal?: Pos
         let header = !this.props.isReply ? <header className="community-container">
             <span>
                 <h1 className="community-container-heading">
-                    <Link to={`/games/${post.gameId}`}>
+                    <Link to={`/game/${post.gameId}`}>
                         <Img className="community-icon"
                             src={"https://web.archive.org/web/20171110012107if_/" + post.gameCommunityIconUri}
                             loader={<img className="community-icon"

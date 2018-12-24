@@ -829,6 +829,11 @@
     "@svgr/core" "^2.4.1"
     loader-utils "^1.1.0"
 
+"@types/applicationinsights-js@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@types/applicationinsights-js/-/applicationinsights-js-1.0.7.tgz#b98f6298860fcc71009b7c14cf7f4b6ced115c3e"
+  integrity sha512-oIqnhcvhz0NRJ+vSN56leWsHyUmz7bySe5f88ukwPhXlNzfTB3JyZ6/bw4+B8zjSktBoYxR9Pzf0t18XwRiwHw==
+
 "@types/jest@^23.3.10":
   version "23.3.10"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.10.tgz#4897974cc317bf99d4fe6af1efa15957fa9c94de"
@@ -1165,6 +1170,11 @@ append-transform@^0.4.0:
   integrity sha1-126/jKlNJ24keja61EpLdKthGZE=
   dependencies:
     default-require-extensions "^1.0.0"
+
+applicationinsights-js@^1.0.20:
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/applicationinsights-js/-/applicationinsights-js-1.0.20.tgz#e0519a2c043e9b4683d32d327a06c3f18c63d5ca"
+  integrity sha512-vN6fEv2fNPZtw76/mv5OJ44cTP/VzSDahdXVIGnRB5Apnf2/9PIl4IyWpwS9biG53I1sWvkw83RjdrAnsIKoRQ==
 
 aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"

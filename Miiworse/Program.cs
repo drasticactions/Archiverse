@@ -34,6 +34,7 @@ namespace Miiworse
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseApplicationInsights()
                 .ConfigureAppConfiguration(ConfigConfiguration)
                 .UseStartup<Startup>();
     }
