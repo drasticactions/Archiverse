@@ -1,0 +1,90 @@
+﻿@model Miiworse.Models.MainModel
+@{
+Layout = null;
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>Archiverse</title>
+    <meta name="description" content="Your guide into Archive Teams Miiverse Grab, with nearly 17 terabytes of posts.">
+
+    <meta name="twitter:card" content="@Model.Twitter.Card">
+    <meta name="twitter:site" content="@("@nytimes")">
+    <meta name="twitter:creator" content="@("@drasticactionSA")">
+    <meta name="twitter:title" content="@Model.Twitter.Title">
+    <meta name="twitter:description" content="@Model.Twitter.Description">
+    @if (!string.IsNullOrEmpty(Model.Twitter.Image))
+    {
+        <meta name="twitter:image" content="@Model.Twitter.Image">
+    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+
+    <style>
+        body {
+            color: #323232;
+            background: #eee url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwBAMAAADMe/ShAAAAHlBMVEX29vb09PTy8vL19fXz8/Px8fHw8PDv7+/u7u739/dHdNvrAAACSElEQVR4AezYNX7DMBiGcafcKTRlC0hdy7T1Z7iAcS5YOkEl38DeQlNOW24YX63fsxr+Ztm2RmvjMiu2bWbOXPmjtW2A7S8YKlfMCK4lKPzeMoJvYhROHYIJno9gggkmmGCCCSaYYIIJJphgggkmGP/PZQZf4XDHCK5JFFYtE7hXkwWYap0awEMPh8NHA7jPNQprv2EAH5zh8MsTDo9vY/xGxuCeLXFYsVMY7nNZwCm/AcM3scZhnTooPBwfafBYP4JwiZvBfgWDh7Xxkc71DmXjY916hOAbLrMxK7ZuTOfKdxC4ZMf6z1Ui2iEh/2Sdssru8L4dy+zXFVGbuVtntyPxK+cqZRc7wr1Ll0v95/qser1DVZv/yVr5bv10Bczq+ML4Rl/als/ww4WfJptbwuACMbgwhaUVfkvgt6LU1icpdkAAAADAEEz/1EKshHOBgMAnwZ7gNgG9DEwybTKpyZiLRCT6ItqUCJuIYqKoosaJlEsMJBki+ZOElwRfkpqSuElcS9Qnd4LcGN3enRUACMRQDFSDJRzg3wIKuNnNzygYA83rGbx9g1cwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPB/bFgfx7ZH4TWJ7DB0W9w5hwcdgen7MHxfp8r9IFGkKQEEU6WHWWhVZaWZTFdlg9mwWSdiAZRbJABB+FzkHoHcXuQ82cDBtlkQzVSkc1yZEMk2fRKNjZTzetkg0LlhJK1KjAYDAaDwWAwGAwGg8FgcAD3L/H6J4DLS/j67eEOl9GYoKbAV2YAAAAASUVORK5CYII=');
+            background-attachment: fixed;
+            -webkit-background-size: 10px;
+            -moz-background-size: 10px;
+            -ms-background-size: 10px;
+            -o-background-size: 10px;
+            background-size: 10px;
+        }
+
+        .loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .inner {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .center-block {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+
+    @Html.Raw(JavaScriptSnippet.FullScript)
+</head>
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    @* Save the request token in a div. CORS needs to make sure this token can't be read by javascript from other sources than ours *@
+    <div id="xsrf-token" data-xsrf-token="@ViewBag.AntiForgeryRequestToken"></div>
+    <div id="access-token" data-access-token="@ViewBag.accessToken"></div>
+
+    <div id="root">
+        <div class="loader">
+            <div class="center-block">
+                <img class="center-block img-responsive" src="/img/archiverse-logo.png" />
+            </div>
+            <div class="center-block">
+                <img class="center-block img-responsive" src="/img/spinner.gif" />
+            </div>
+        </div>
+    </div>
+
+    <script src="~/dist/vendor.js" asp-append-version="true"></script>
+    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+
+</body>
+</html>

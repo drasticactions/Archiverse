@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "baseUrl": "ClientApp",
+        "module": "es2020",
+        "moduleResolution": "node",
+        "target": "es5",
+        "jsx": "react",
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "skipDefaultLibCheck": true,
+        "strict": false,
+        "noImplicitReturns": true,
+        "allowUnusedLabels": false,
+        "allowSyntheticDefaultImports": true,
+        "noFallthroughCasesInSwitch": true,
+        "lib": [ "ES2020", "dom" ],
+        "types": [ "webpack-env" ],
+        "paths": {
+            "@Components/*": [ "./components/*" ]
+        }
+    },
+    "exclude": [
+        "bin",
+        "node_modules",
+        "AspNet"
+    ]
+}
