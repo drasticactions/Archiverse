@@ -19,7 +19,7 @@ export class GamesSearchForm extends React.Component<{ search: GameSearch }, {}>
     }
 
     updateDropProperty(x, y) {
-        this.props.search[x.target.name] = x.target.value;
+        this.props.search[x.target.name] = parseInt(x.target.value);
         this.isDirty = true;
     }
 
